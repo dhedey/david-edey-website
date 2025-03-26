@@ -1,6 +1,3 @@
-# We explicitly allow dist to be committed for github pages
-!dist
-
 # Logs
 logs
 *.log
@@ -11,6 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+dist
 dist-ssr
 *.local
 
