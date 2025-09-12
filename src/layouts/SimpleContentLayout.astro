@@ -1,6 +1,6 @@
 ---
 import BaseLayout, { type Props as BaseLayoutProps } from './BaseLayout.astro';
-import Prose from '../components/Prose.astro';
+import Prose from '@/components/Prose.astro';
 
 interface Props {
     title: string;
@@ -17,6 +17,7 @@ const ContainerElement = props.isArticle ? 'article' : 'div';
 <BaseLayout headTitle={headTitle}>
     <ContainerElement class="bg-white rounded-lg shadow p-4 sm:p-8 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mx-2 sm:mx-0">
         <h1 class="text-3xl font-bold mb-6">{title}</h1>
+        <slot name="beforeProse" />
         <Prose>
             <slot />
         </Prose>

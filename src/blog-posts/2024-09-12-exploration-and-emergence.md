@@ -6,7 +6,7 @@ description: "An introduction to this website: why it's named like it is, and ho
 tags: ["website", "blog", "philosophy", "personal", "llm-collaboration", "ai"]
 ---
 
-**Exploration and emergence** is a whimsical name for [my website](/about), and this blog post explores the philosophy of the name, and details about the website itself.
+**Exploration & emergence** is a whimsical name for [my website](/about), and this blog post explores the philosophy of the name, and details about the website itself.
 
 ---
 
