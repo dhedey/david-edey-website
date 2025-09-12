@@ -1,0 +1,28 @@
+---
+
+import SimpleContentLayout from '../../layouts/SimpleContentLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+function formatDate(date: Date) {
+    return date.toISOString().split('T')[0];
+}
+---
+
+<SimpleContentLayout title="Blog Posts">
+    <ul class="w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mx-2 sm:mx-0">
+        {posts.map(post => (
+            <li class="mb-4">
+                <span class="text-xl font-semibold">{formatDate(post.data.pubDate)} | <a href={`/blog/${post.id}`} class="text-blue-600 hover:underline">{post.data.title}</a></span>
+                <p class="text-gray-500 text-sm">{post.data.description}</p>
+                {post.data.tags.length > 0 && (
+                    <div class="text-sm font-semibold text-gray-700 flex gap-2">{post.data.tags.map(tag => (
+                        <span class="bg-gray-200 rounded-full px-1.5">{tag}</span>
+                    ))}</div>
+                )}
+            </li>
+        ))}
+    </ul>
+</SimpleContentLayout>

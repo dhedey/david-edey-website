@@ -1,0 +1,29 @@
+---
+import SimpleContentLayout from '../layouts/SimpleContentLayout.astro';
+---
+
+<SimpleContentLayout title="About">
+    <figure class="flex justify-center items-center gap-6 p-6 not-prose">
+        <img 
+            src="/profile-picture.png" 
+            alt="David Edey"
+            class="w-32 h-32 rounded-full border-2 border-gray-300 object-cover shadow-lg"
+        />
+        <span class="text-3xl font-bold text-gray-800">
+            David Edey
+        </span>
+        <a href="https://github.com/dhedey" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src="/github-logo.png" alt="GitHub" class="w-8 h-8" />
+        </a>
+        <a href="https://www.linkedin.com/in/david-edey/" target="_blank" class="hover:opacity-80 transition-opacity">
+            <img src="/linkedin-logo.png" alt="LinkedIn" class="w-8 h-8" />
+        </a>
+    </figure>
+    <p>
+        I'm a technical architect with a maths background. I love to learn and explore new ideas.
+    </p>
+    <p>
+        <a href="/blog/exploration-and-emergence">Exploration and emergence</a> is a home for me to share musings, projects, news and ideas that have captured my attention.
+        I expect to muse on AI (safety, architecture, use), technical design, security, product, language design, software and hardware.
+    </p>
+</SimpleContentLayout>
