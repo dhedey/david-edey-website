@@ -21,7 +21,7 @@ const hasTagsBlock = tags && tags.length > 0;
 ---
 
 <SimpleContentLayout headTitle={`Blog | ${title}`} title={title} isArticle={true}>
-    {hasTagsBlock && <div class="mb-4">
+    {hasTagsBlock && <div class="mb-12">
         <Tags names={tags} slot="beforeProse" />
     </div>}
     <Content />
