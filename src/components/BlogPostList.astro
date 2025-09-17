@@ -16,10 +16,12 @@ function formatDate(date: Date) {
 
 <ul class="w-full">
     {posts.map(post => (
-        <li class="mb-4">
-            <span class="text-xl font-semibold">{formatDate(post.data.pubDate)} | <a href={`/blog/${post.id}`} class="text-blue-600 hover:underline">{post.data.title}</a></span>
-            <p class="text-gray-500 text-sm">{post.data.description}</p>
-            <Tags names={post.data.tags} />
+        <li>
+            <div class="flex flex-col gap-2 mb-6">
+                <span class="text-xl font-semibold">{formatDate(post.data.pubDate)} | <a href={`/blog/${post.id}`} class="text-blue-600 hover:underline">{post.data.title}</a></span>
+                <div class="text-gray-500 text-sm">{post.data.description}</div>
+                <Tags names={post.data.tags} />
+            </div>
         </li>
     ))}
 </ul>

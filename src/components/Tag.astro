@@ -1,8 +1,14 @@
 ---
+
 interface Props {
     name: string;
 }
 const { name } = Astro.props;
 ---
-
-<a href={`/blog/tag/${name}`} class="text-sm font-semibold text-gray-700 bg-gray-200 rounded-full px-1.5">{name}</a>
+<style>
+    @reference "@/styles/global.css";
+    .tag {
+        @apply text-sm font-semibold no-underline text-gray-700 hover:text-gray-900 bg-blue-100 hover:bg-blue-200 rounded-full px-1.5;
+    }
+</style>
+<a href={`/blog/tag/${name}`} class="tag">{name}</a>

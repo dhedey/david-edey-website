@@ -16,4 +16,10 @@ export default defineConfig({
             },
         },
     },
+    markdown: {
+      // https://docs.astro.build/en/reference/configuration-reference/#markdownremarkrehype
+      remarkRehype: {
+        clobberPrefix: 'footnote-',
+      }
+    },
 });

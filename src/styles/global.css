@@ -2,3 +2,8 @@
 @plugin "@tailwindcss/typography";
 
 @tailwind utilities;
+
+@theme {
+    --color-link-hover: theme('colors.blue.700');
+    --color-link: theme('colors.gray.800');
+}

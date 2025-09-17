@@ -7,7 +7,7 @@ const { names } = Astro.props;
 ---
 
 {names.length > 0 && (
-    <div class="text-sm font-semibold text-gray-700 flex gap-2">{names.map(tag => (
+    <div class="text-sm font-semibold text-gray-700 flex flex-wrap gap-2">{names.map(tag => (
         <Tag name={tag} />
     ))}</div>
 )}
