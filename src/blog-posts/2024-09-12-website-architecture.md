@@ -3,7 +3,11 @@ slug: website-architecture
 title: Website Architecture
 pubDate: 2025-09-12
 description: How is this website built?
-tags: ["website", "software", "llm-collaboration", "ai"]
+tags:
+ - website
+ - software
+ - llm-collaboration
+ - ai
 ---
 
 As a techy, I love to know what frameworks my favourite websites use, so I can consider using them myself. Whilst this is a minimal static site, I thought I'd share some details on how I built it anyway.
@@ -26,6 +30,10 @@ I've been exploring different strategies, and the persona from the Socratic Shel
 ### What tech stack does it use?
 
 It's a simple static site, built with [Astro](https://astro.build/) and deployed to github pages.
+
+### How did you choose the aesthetic?
+
+Minimalism appeals.
 
 ### Why now?
 

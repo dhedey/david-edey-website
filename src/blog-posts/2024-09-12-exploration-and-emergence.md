@@ -1,9 +1,13 @@
 ---
 slug: exploration-and-emergence
-title: "Exploration & Emergence?"
+title: Exploration & Emergence?
 pubDate: 2025-09-12
-description: What motivated the name "Exploration & Emergence"? And how was the website built?
-tags: ["website", "philosophy", "personal", "ai"]
+description: What motivated the name "Exploration & Emergence" for this website?
+tags:
+ - website
+ - philosophy
+ - personal
+ - ai
 ---
 
 **Exploration & emergence** is a whimsical name for [my website](/blog/website-architecture), and this blog post explores the philosophy of the name.
