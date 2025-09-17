@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 @theme {
-    --color-link-hover: theme('colors.blue.700');
-    --color-link: theme('colors.gray.800');
+    --color-link-hover: theme('colors.gray.900');
+    --color-link: theme('colors.blue.700');
 }
