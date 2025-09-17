@@ -31,6 +31,10 @@ I've been exploring different strategies, and the persona from the Socratic Shel
 
 It's a simple static site, built with [Astro](https://astro.build/) and deployed to github pages.
 
+Honestly, using Astro feels great for static site generation.
+
+It feels minimal but it works beautifully. The boilerplate is tiny, the abstractions are clear, the magic is very limited. Markdown and Tailwind feel like first-class citizens. I don't even need a javascript UI framework.
+
 ### How did you choose the aesthetic?
 
 Minimalism appeals.
