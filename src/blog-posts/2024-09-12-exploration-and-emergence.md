@@ -36,7 +36,7 @@ These have all got me thinking about how we learn, how we are useful, and how th
 
 On the one hand, my 16 month old daughter is certainly less useful in a workspace than an LLM. An LLM has an immense breadth and depth of knowledge and capacity to do useful work. But there are some things my daughter can do much better. She has a persistent, growing knowledge and she excels at learning from exploring the environment, copying behaviours and internalising expectations from the world around her. She then plays to consolidate and build new ideas. She is able to adapt, extrapolate and surprise.
 
-I believe a **system's intellect reflect its structure**. Phrased another way, the structure of how a system is built to learn guides and effects its emergent intellectual properties and capabilities.
+I believe a **system's intellect reflects its structure**. Phrased another way, the structure of how a system is built to learn guides and effects its emergent intellectual properties and capabilities.
 
 As humans, our genetics guide the development of a brain with areas specialized to different tasks (e.g. vision, calculation, feelings, planning or memory-management), and networks these together in a way which enables learning with strong [inductive biases](https://en.wikipedia.org/wiki/Inductive_bias) which aid our survival. And it's not just the brain - the nerves and hormones contribute to us learning effectively by creating signals to help us expect, learn and interact with the world.
 

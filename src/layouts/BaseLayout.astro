@@ -4,6 +4,7 @@ import TopBar from '@/components/TopBar.astro';
 
 export interface Props {
   headTitle: string;
+  metaDescription?: string;
 }
 
 const props: Props = Astro.props;
@@ -14,6 +15,7 @@ const props: Props = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exploration & Emergence | {props.headTitle}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {props.metaDescription ? <meta name="description" content={props.metaDescription} /> : null}
   </head>
   <body class="bg-gray-100">
     <TopBar />

@@ -19,7 +19,7 @@ const { Content, headings } = await render(post);
 const { title, tags, pubDate, description } = post.data;
 ---
 
-<SimpleContentLayout headTitle={`Blog | ${title}`} title={title} isArticle={true}>
+<SimpleContentLayout headTitle={`Blog | ${title}`} title={title} isArticle={true} metaDescription={description}>
     <div slot="beforeProse" class="mb-8">
         <div class="flex mb-4 flex-wrap gap-y-4">
             <div class="text-sm flex-grow">{pubDate.toISOString().split('T')[0]}</div>
