@@ -14,9 +14,8 @@ const headTitle = props.headTitle || props.title;
 const ContainerElement = props.isArticle ? 'article' : 'div';
 
 ---
-
 <BaseLayout headTitle={headTitle} metaDescription={props.metaDescription}>
-    <ContainerElement class="bg-white rounded-lg shadow p-4 sm:p-8 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mx-2 sm:mx-0">
+    <ContainerElement class="bg-white rounded-lg shadow p-4 sm:p-8 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-2 sm:mx-0">
         <h1 class="text-3xl font-bold mb-4">{title}</h1>
         <slot name="beforeProse" />
         <Prose>

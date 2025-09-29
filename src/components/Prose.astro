@@ -3,7 +3,31 @@
 <style>
     @reference "@/styles/global.css";
     .prose-wrapper {
-        @apply prose max-w-none prose-hr:border-gray-400 prose-hr:m-8 prose-li:m-0 prose-a:text-link prose-a:hover:text-link-hover prose-code:bg-gray-100 prose-code:p-1 prose-code:rounded prose-code:before:content-none prose-code:after:content-none prose-strong:text-red-700;
+        /* https://github.com/tailwindlabs/tailwindcss-typography */
+        @apply prose max-w-none;
+        @apply prose-hr:border-gray-400 prose-hr:m-8;
+        @apply prose-li:m-0;
+        @apply prose-a:text-link prose-a:hover:text-link-hover;
+        @apply prose-code:bg-gray-100 prose-code:p-1 prose-code:rounded prose-code:before:content-none prose-code:after:content-none;
+
+        /* Blockquote modifications */
+        @apply prose-blockquote:font-normal prose-blockquote:not-italic;
+        @apply prose-blockquote:bg-blue-50;
+        @apply prose-blockquote:p-4;
+
+        --tw-prose-quote-borders: theme('colors.blue.500');
+    }
+
+    /* For some reason this can't be inlined under prose-wrapper above */
+    .prose-wrapper :global(blockquote) :global(p) {
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        /* @apply p-4; */
+        @apply before:content-none after:content-none;
     }
 
     /** FOOTNOTE MODIFICATIONS */

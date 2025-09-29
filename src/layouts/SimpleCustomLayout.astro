@@ -1,0 +1,18 @@
+---
+import BaseLayout, { type Props as BaseLayoutProps } from './BaseLayout.astro';
+
+interface Props {
+    title: string;
+    headTitle?: string;
+    metaDescription?: string;
+}
+const props: Props = Astro.props;
+const { title } = props;
+const headTitle = props.headTitle || props.title;
+---
+<BaseLayout headTitle={headTitle} metaDescription={props.metaDescription}>
+    <div class="bg-white rounded-lg shadow p-4 sm:p-8 w-full max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-2 sm:mx-0">
+        <h1 class="text-3xl font-bold mb-4">{title}</h1>
+        <slot />
+    </div>
+</BaseLayout>

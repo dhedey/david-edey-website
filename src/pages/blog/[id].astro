@@ -1,6 +1,6 @@
 ---
 import { getEntry, render, getCollection } from 'astro:content';
-import SimpleContentLayout from '@/layouts/SimpleContentLayout.astro';
+import SimpleProseLayout from '@/layouts/SimpleProseLayout.astro';
 import Tags from '@/components/Tags.astro';
 
 export async function getStaticPaths() {
@@ -19,15 +19,15 @@ const { Content, headings } = await render(post);
 const { title, tags, pubDate, description } = post.data;
 ---
 
-<SimpleContentLayout headTitle={`Blog | ${title}`} title={title} isArticle={true} metaDescription={description}>
+<SimpleProseLayout headTitle={`Blog | ${title}`} title={title} isArticle={true} metaDescription={description}>
     <div slot="beforeProse" class="mb-8">
         <div class="flex mb-4 flex-wrap gap-y-4">
             <div class="text-sm flex-grow">{pubDate.toISOString().split('T')[0]}</div>
             <Tags names={tags} />
         </div>
-        <div class="w-full text-gray-600 p-4 italic bg-gray-100 rounded">
+        <div class="w-full text-gray-600 p-4 italic bg-gray-100 border-l-4 border-l-gray-400 rounded">
             {description}
         </div>
     </div>
     <Content />
-</SimpleContentLayout>
+</SimpleProseLayout>

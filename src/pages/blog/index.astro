@@ -1,6 +1,6 @@
 ---
 
-import SimpleContentLayout from '@/layouts/SimpleContentLayout.astro';
+import SimpleCustomLayout from '@/layouts/SimpleCustomLayout.astro';
 import BlogPostList from '@/components/BlogPostList.astro';
 import { getCollection } from 'astro:content';
 
@@ -8,6 +8,6 @@ const posts = await getCollection('blog');
 
 ---
 
-<SimpleContentLayout title="Blog Posts">
+<SimpleCustomLayout title="Blog Posts">
     <BlogPostList posts={posts} />
-</SimpleContentLayout>
+</SimpleCustomLayout>

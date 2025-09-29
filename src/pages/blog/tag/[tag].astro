@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import SimpleContentLayout from '@/layouts/SimpleContentLayout.astro';
+import SimpleCustomLayout from '@/layouts/SimpleCustomLayout.astro';
 import BlogPostList from '@/components/BlogPostList.astro';
 
 export async function getStaticPaths() {
@@ -29,6 +29,6 @@ if (!filteredPosts.length) {
 const upperTag = tag[0].toUpperCase() + tag.slice(1);
 ---
 
-<SimpleContentLayout headTitle={`Tag | ${upperTag}`} title={`Blog Posts | ${tag}`}>
+<SimpleCustomLayout headTitle={`Tag | ${upperTag}`} title={`Blog Posts | ${tag}`}>
     <BlogPostList posts={filteredPosts} />
-</SimpleContentLayout>
+</SimpleCustomLayout>
