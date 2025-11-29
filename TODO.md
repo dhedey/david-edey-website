@@ -6,7 +6,7 @@ preinterpret
   - [ ] What and why?
   - [ ] V0 overview
   - [ ] The path to V1
-  *     Implementation Stories
+  * Implementation Stories
     - [ ] Control Flow
 * Radix
   - [ ] What makes a great engineering culture?
